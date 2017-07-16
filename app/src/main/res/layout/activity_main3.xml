@@ -1,23 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#dadada"
-    tools:context="com.continentaltechsolutions.dell.mytestapp.Activity.Main2Activity">
-
-    <!--4 Button -->
+    android:background="@drawable/home2"
+    android:orientation="vertical"
+    tools:context="com.continentaltechsolutions.dell.mytestapp.Activity.Main3Activity"
+    android:weightSum="1">
     <LinearLayout
-        android:id="@+id/linearLayout"
         android:layout_width="match_parent"
-        android:layout_height="109dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="80dp"
+        android:layout_height="45dp"
+        android:orientation="vertical">
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/swipeToRefreshHome"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="7"
+                    android:text="TextView" />
+
+                <ImageView
+                    android:id="@+id/imageViewStatus"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/red" />
+            </LinearLayout>
+        </android.support.v4.widget.SwipeRefreshLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="84dp"
+        android:orientation="vertical">
+        <!--Space-->
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
         android:orientation="horizontal"
-        android:paddingLeft="15dp"
-        android:paddingRight="15dp">
+        android:layout_weight="0.22">
 
         <ImageButton
             android:id="@+id/imageButtonPolice"
@@ -25,8 +59,8 @@
             android:layout_height="100dp"
             android:layout_weight="1"
             android:adjustViewBounds="true"
-            android:scaleType="fitXY"
             android:background="@null"
+            android:scaleType="fitXY"
             app:srcCompat="@drawable/police" />
 
         <ImageButton
@@ -35,8 +69,8 @@
             android:layout_height="100dp"
             android:layout_weight="1"
             android:adjustViewBounds="true"
-            android:scaleType="fitXY"
             android:background="@null"
+            android:scaleType="fitXY"
             app:srcCompat="@drawable/fire" />
 
         <ImageButton
@@ -45,8 +79,8 @@
             android:layout_height="100dp"
             android:layout_weight="1"
             android:adjustViewBounds="true"
-            android:scaleType="fitXY"
             android:background="@null"
+            android:scaleType="fitXY"
             app:srcCompat="@drawable/ambulance" />
 
         <ImageButton
@@ -55,54 +89,14 @@
             android:layout_height="100dp"
             android:layout_weight="1"
             android:adjustViewBounds="true"
-            android:scaleType="fitXY"
             android:background="@null"
+            android:scaleType="fitXY"
             app:srcCompat="@drawable/sos" />
     </LinearLayout>
-    <!--Status -->
+
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:orientation="horizontal">
-
-        <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="2"
-            android:scaleType="fitXY"
-            app:srcCompat="@drawable/new_health_status" />
-
-        <ImageView
-            android:id="@+id/imageViewStatus"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:scaleType="fitXY"
-            app:srcCompat="@drawable/new_faulty" />
-    </LinearLayout>
-    <!--Bottom OdXel-->
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:gravity="bottom">
-
-        <ImageView
-            android:id="@+id/imageView8"
-            android:layout_width="match_parent"
-            android:layout_height="100dp"
-            android:scaleType="fitXY"
-            app:srcCompat="@drawable/odxel_bottom" />
-
-    </RelativeLayout>
-    <!--Ctrl and Arm Button -->
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/linearLayout"
+        android:layout_height="132dp"
         android:orientation="horizontal">
         <RelativeLayout
             android:layout_width="0dip"
@@ -151,4 +145,13 @@
         </RelativeLayout>
     </LinearLayout>
 
-</RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:orientation="vertical">
+        <!--Space-->
+    </LinearLayout>
+
+
+</LinearLayout>
+

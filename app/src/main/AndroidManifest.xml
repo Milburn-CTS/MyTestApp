@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.continentaltechsolutions.dell.mytestapp">
 
-   <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
     <uses-permission android:name="android.permission.ACTION_CALL" />
     <uses-permission android:name="android.permission.CALL_PHONE" />
 
@@ -13,20 +13,24 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".Activity.MainActivity" />
 
         <!-- defining the service class here -->
         <service android:name=".Service.MyService" />
 
-        <activity android:name=".Main2Activity">
+        <activity android:name=".Activity.Main2Activity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MusicActivity"></activity>
-        <activity android:name=".ServiceActivity">
+        <activity android:name=".Activity.MusicActivity" />
+        <activity android:name=".Activity.ServiceActivity" />
+        <activity android:name=".Activity.Main3Activity">
+
+        </activity>
+        <activity android:name=".Activity.SharedPrefActivity">
 
         </activity>
     </application>

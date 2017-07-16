@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:scaleType="fitXY"
-    tools:context="com.continentaltechsolutions.dell.mytestapp.MainActivity"
+    tools:context="com.continentaltechsolutions.dell.mytestapp.Activity.MainActivity"
     android:weightSum="1">
 
 
